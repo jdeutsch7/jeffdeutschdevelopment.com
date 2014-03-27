@@ -1,0 +1,185 @@
+body {
+	background: $bg_white;
+	color: $black;
+	font-family: $secondary_font;
+}
+h1, h2, h3, h4 {
+	font-family: $primary_font;
+	text-transform: uppercase;
+}
+h2 {
+	color: $black;
+	font-size: 80px;
+	margin: 30px 0;
+}
+a {
+	color: $black;
+	text-decoration: none;
+}
+.header-wrap {
+	background: $bg_white;
+	border-bottom: 1px solid #999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+.logo {
+	height: 50px;
+	float: left;
+	margin: 10px 0;
+}
+// hide mobile menu dropdown
+.menu-dropdown {
+	display: none;
+}
+.main-menu {
+	float: left;
+	padding-left: 5px;
+
+	li {
+	font-family: $primary_font;
+		// border-left: 1px solid #333;
+		// border-right: 1px solid #000;
+		float: left;
+	
+		&:first-child {
+			// @include box-shadow( -4px, -2px, 2px, rgba(0, 0, 0, 0.5));
+		}
+		&:last-child {
+			// @include box-shadow( -4px, 2px, 2px, rgba(0, 0, 0, 0.5));
+		}
+		a {
+			// background: $backgroundBlack;
+			color: #333;
+			display: block;
+			font-size: 26px;
+			font-weight: 700;
+			padding: 20px 20px;
+			text-decoration: none;
+		}
+	}
+}
+
+// main wrap
+
+.main {
+	position: relative;
+	top: 71px;
+	width: 100%;
+}
+.container {
+	margin: 0 auto;
+	max-width: $maxWidth;
+	width: 92%;
+}
+.section {
+	float: left;
+	padding-bottom: 50px;
+	width: 100%;
+}
+.col-right {
+	float: right;
+	margin-left: 2%;
+	width: 48%;
+}
+.col-left {
+	float: left;
+	margin-right: 2%;
+	width: 48%;
+}
+
+.coming-soon {
+	background: $bg_orange;
+	float: left;
+	padding: 200px 0;
+	width: 100%;
+
+	 h2 {
+		font-size: 100px;
+		margin: 0 0 10px;
+		line-height: 70px;
+	 }
+	 h3 {
+	 	color: $white;
+		font-size: 30px;
+	 }
+}
+
+// Footer Styling
+
+.contact-menu {
+	font-size: 20px;
+
+	i {
+		font-size: 30px;
+		line-height: 32px;
+		margin-right: 20px;
+		width: 30px;
+	}
+	li {
+		margin-bottom: 10px;
+	}
+	.contact-desc {
+		margin-right: 10px;
+	}
+}
+.social-menu-wrap {
+	float: left;
+	margin:15px 0 25px;
+	width: 100%;
+}
+.social-menu {
+	float: left;
+
+	li {
+		float: left;
+	}
+	i {
+		font-size: 40px;
+	}
+	a {
+		color: $black;	
+	}
+	a:hover {
+		color: $orange;
+	}
+	.google-plus {
+		margin-right: 15px;
+		font-size: 26px;
+	}
+	.linked-in {
+		margin-right: 15px;
+		font-size: 26px;
+	}
+}
+.resume-dl {
+	background: $bg_black;
+	@include radius(5px);
+	clear: both;
+	color: $white;
+	display: block;
+	font-size: 16px;
+	padding: 7px 10px;
+	width: 160px;
+
+	i {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+}
+
+.footer-wrap {
+	background: $bg_black;
+	color: $white;
+	clear: both;
+	height: 44px;
+	overflow: hidden;
+	width: auto;
+}
+.footer-name {
+	font-family: $primary_font;
+	font-size: 80px;
+	line-height: 44px;
+	text-transform: uppercase;
+}

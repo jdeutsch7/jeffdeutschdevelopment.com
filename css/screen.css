@@ -1,0 +1,723 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Users/admin/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_global.scss */
+body {
+  background: url(../img/bg_white.png) repeat;
+  color: #333333;
+  font-family: "Oswald", sans-serif;
+  overflow: auto;
+}
+
+/* line 7, ../sass/partials/_global.scss */
+h1, h2, h3, h4 {
+  font-family: "Racing Sans One", cursive;
+  text-transform: uppercase;
+}
+
+/* line 11, ../sass/partials/_global.scss */
+h2 {
+  color: #333333;
+  font-size: 80px;
+  margin: 30px 0;
+}
+
+/* line 16, ../sass/partials/_global.scss */
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+/* line 20, ../sass/partials/_global.scss */
+.header-wrap {
+  background: url(../img/bg_white.png) repeat;
+  border-bottom: 1px solid #999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* line 28, ../sass/partials/_global.scss */
+.logo {
+  height: 50px;
+  float: left;
+  margin: 10px 0;
+}
+
+/* line 34, ../sass/partials/_global.scss */
+.menu-dropdown {
+  display: none;
+}
+
+/* line 37, ../sass/partials/_global.scss */
+.main-menu {
+  float: left;
+  padding-left: 5px;
+}
+/* line 41, ../sass/partials/_global.scss */
+.main-menu li {
+  font-family: "Racing Sans One", cursive;
+  float: left;
+}
+/* line 53, ../sass/partials/_global.scss */
+.main-menu li a {
+  color: #333;
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* line 67, ../sass/partials/_global.scss */
+.main {
+  position: relative;
+  top: 71px;
+  width: 100%;
+}
+
+/* line 72, ../sass/partials/_global.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1060px;
+  width: 92%;
+}
+
+/* line 77, ../sass/partials/_global.scss */
+.section {
+  float: left;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+/* line 82, ../sass/partials/_global.scss */
+.col-right {
+  float: right;
+  margin-left: 2%;
+  width: 48%;
+}
+
+/* line 87, ../sass/partials/_global.scss */
+.col-left {
+  float: left;
+  margin-right: 2%;
+  width: 48%;
+}
+
+/* line 93, ../sass/partials/_global.scss */
+.coming-soon {
+  background: url(../img/bg_orange.png) repeat;
+  float: left;
+  padding: 200px 0;
+  width: 100%;
+}
+/* line 99, ../sass/partials/_global.scss */
+.coming-soon h2 {
+  font-size: 100px;
+  margin: 0 0 10px;
+  line-height: 70px;
+}
+/* line 104, ../sass/partials/_global.scss */
+.coming-soon h3 {
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+/* line 112, ../sass/partials/_global.scss */
+.contact-menu {
+  font-size: 20px;
+}
+/* line 115, ../sass/partials/_global.scss */
+.contact-menu i {
+  font-size: 30px;
+  line-height: 32px;
+  margin-right: 20px;
+  width: 30px;
+}
+/* line 121, ../sass/partials/_global.scss */
+.contact-menu li {
+  margin-bottom: 10px;
+}
+/* line 124, ../sass/partials/_global.scss */
+.contact-menu .contact-desc {
+  margin-right: 10px;
+}
+
+/* line 128, ../sass/partials/_global.scss */
+.social-menu-wrap {
+  float: left;
+  margin: 15px 0 25px;
+  width: 100%;
+}
+
+/* line 133, ../sass/partials/_global.scss */
+.social-menu {
+  float: left;
+}
+/* line 136, ../sass/partials/_global.scss */
+.social-menu li {
+  float: left;
+}
+/* line 139, ../sass/partials/_global.scss */
+.social-menu i {
+  font-size: 40px;
+}
+/* line 142, ../sass/partials/_global.scss */
+.social-menu a {
+  color: #333333;
+}
+/* line 145, ../sass/partials/_global.scss */
+.social-menu a:hover {
+  color: #eea44f;
+}
+/* line 148, ../sass/partials/_global.scss */
+.social-menu .google-plus {
+  margin-right: 15px;
+  font-size: 26px;
+}
+/* line 152, ../sass/partials/_global.scss */
+.social-menu .linked-in {
+  margin-right: 15px;
+  font-size: 26px;
+}
+
+/* line 157, ../sass/partials/_global.scss */
+.resume-dl {
+  background: url(../img/main_black_bg.png) repeat;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  clear: both;
+  color: whitesmoke;
+  display: block;
+  font-size: 16px;
+  padding: 7px 10px;
+  width: 160px;
+}
+/* line 167, ../sass/partials/_global.scss */
+.resume-dl i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* line 173, ../sass/partials/_global.scss */
+.footer-wrap {
+  background: url(../img/main_black_bg.png) repeat;
+  color: whitesmoke;
+  clear: both;
+  height: 44px;
+  overflow: hidden;
+  width: auto;
+}
+
+/* line 181, ../sass/partials/_global.scss */
+.footer-name {
+  font-family: "Racing Sans One", cursive;
+  font-size: 80px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/partials/_home.scss */
+.about {
+  background: url(../img/bg_orange.png) repeat;
+  color: #333333;
+}
+/* line 5, ../sass/partials/_home.scss */
+.about h4 {
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
+}
+/* line 10, ../sass/partials/_home.scss */
+.about p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+/* line 17, ../sass/partials/_home.scss */
+.jd-picture-wrap {
+  float: right;
+  margin: 0 15% 0 5%;
+  text-align: center;
+}
+/* line 22, ../sass/partials/_home.scss */
+.jd-picture-wrap h3 {
+  font-size: 26px;
+}
+/* line 25, ../sass/partials/_home.scss */
+.jd-picture-wrap h4 {
+  color: whitesmoke;
+  font-family: "Racing Sans One", cursive;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* line 32, ../sass/partials/_home.scss */
+.jd-picture {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+/* line 40, ../sass/partials/_home.scss */
+.jd-picture:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+/* line 44, ../sass/partials/_home.scss */
+.about-content {
+  border-bottom: 1px solid #444;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 49, ../sass/partials/_home.scss */
+.services {
+  margin-bottom: 30px;
+}
+
+/* line 54, ../sass/partials/_home.scss */
+.services-icons li {
+  float: left;
+  margin-right: 5px;
+}
+/* line 58, ../sass/partials/_home.scss */
+.services-icons a {
+  background: url(../../img/service_sprite.png);
+  background-position: -5px 72px;
+  cursor: pointer;
+  display: block;
+  height: 70px;
+  width: 70px;
+}
+/* line 66, ../sass/partials/_home.scss */
+.services-icons a.highlight {
+  background-position: -5px -3px;
+}
+/* line 69, ../sass/partials/_home.scss */
+.services-icons .responsive {
+  background-position: -95px 72px;
+}
+/* line 70, ../sass/partials/_home.scss */
+.services-icons .ia {
+  background-position: -185px 72px;
+}
+/* line 71, ../sass/partials/_home.scss */
+.services-icons .cms {
+  background-position: -275px 72px;
+}
+/* line 72, ../sass/partials/_home.scss */
+.services-icons .responsive.highlight {
+  background-position: -95px -3px;
+}
+/* line 73, ../sass/partials/_home.scss */
+.services-icons .ia.highlight {
+  background-position: -185px -3px;
+}
+/* line 74, ../sass/partials/_home.scss */
+.services-icons .cms.highlight {
+  background-position: -275px -3px;
+}
+
+/* line 76, ../sass/partials/_home.scss */
+.services-desc-wrap {
+  clear: both;
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* line 82, ../sass/partials/_home.scss */
+.services-desc {
+  display: none;
+}
+/* line 85, ../sass/partials/_home.scss */
+.services-desc p {
+  max-width: 300px;
+}
+
+/* line 89, ../sass/partials/_home.scss */
+.services-desc.active {
+  display: block;
+}
+
+/* line 94, ../sass/partials/_home.scss */
+.portfolio {
+  background: url(../img/main_black_bg.png) repeat;
+  color: whitesmoke;
+}
+/* line 98, ../sass/partials/_home.scss */
+.portfolio h2 {
+  color: whitesmoke;
+}
+
+/* line 1, ../sass/partials/_resume.scss */
+.about {
+  background: url(../img/bg_orange.png) repeat;
+  color: #333333;
+}
+/* line 5, ../sass/partials/_resume.scss */
+.about h4 {
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
+}
+/* line 10, ../sass/partials/_resume.scss */
+.about p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+/* line 17, ../sass/partials/_resume.scss */
+.jd-picture-wrap {
+  float: right;
+  margin: 0 15% 0 5%;
+  text-align: center;
+}
+/* line 22, ../sass/partials/_resume.scss */
+.jd-picture-wrap h3 {
+  font-size: 26px;
+}
+/* line 25, ../sass/partials/_resume.scss */
+.jd-picture-wrap h4 {
+  color: whitesmoke;
+  font-family: "Racing Sans One", cursive;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* line 32, ../sass/partials/_resume.scss */
+.jd-picture {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+/* line 40, ../sass/partials/_resume.scss */
+.jd-picture:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+/* line 44, ../sass/partials/_resume.scss */
+.about-content {
+  border-bottom: 1px solid #444;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 49, ../sass/partials/_resume.scss */
+.services {
+  margin-bottom: 30px;
+}
+
+/* line 54, ../sass/partials/_resume.scss */
+.services-icons li {
+  float: left;
+  margin-right: 5px;
+}
+/* line 58, ../sass/partials/_resume.scss */
+.services-icons a {
+  background: url(../../img/service_sprite.png);
+  background-position: -5px 72px;
+  cursor: pointer;
+  display: block;
+  height: 70px;
+  width: 70px;
+}
+/* line 66, ../sass/partials/_resume.scss */
+.services-icons a.highlight {
+  background-position: -5px -3px;
+}
+/* line 69, ../sass/partials/_resume.scss */
+.services-icons .responsive {
+  background-position: -95px 72px;
+}
+/* line 70, ../sass/partials/_resume.scss */
+.services-icons .ia {
+  background-position: -185px 72px;
+}
+/* line 71, ../sass/partials/_resume.scss */
+.services-icons .cms {
+  background-position: -275px 72px;
+}
+/* line 72, ../sass/partials/_resume.scss */
+.services-icons .responsive.highlight {
+  background-position: -95px -3px;
+}
+/* line 73, ../sass/partials/_resume.scss */
+.services-icons .ia.highlight {
+  background-position: -185px -3px;
+}
+/* line 74, ../sass/partials/_resume.scss */
+.services-icons .cms.highlight {
+  background-position: -275px -3px;
+}
+
+/* line 76, ../sass/partials/_resume.scss */
+.services-desc-wrap {
+  clear: both;
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* line 82, ../sass/partials/_resume.scss */
+.services-desc {
+  display: none;
+}
+/* line 85, ../sass/partials/_resume.scss */
+.services-desc p {
+  max-width: 300px;
+}
+
+/* line 89, ../sass/partials/_resume.scss */
+.services-desc.active {
+  display: block;
+}
+
+/* line 94, ../sass/partials/_resume.scss */
+.portfolio {
+  background: url(../img/main_black_bg.png) repeat;
+  color: whitesmoke;
+}
+/* line 98, ../sass/partials/_resume.scss */
+.portfolio h2 {
+  color: whitesmoke;
+}
+
+@media (min-width: 768px) and (max-width: 1164px) {
+  /* line 4, ../sass/partials/_mobile.scss */
+  .footer-wrap {
+    height: 30px;
+  }
+
+  /* line 7, ../sass/partials/_mobile.scss */
+  .footer-name {
+    font-size: 50px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 17, ../sass/partials/_mobile.scss */
+  h2 {
+    font-size: 50px;
+  }
+
+  /* line 20, ../sass/partials/_mobile.scss */
+  .main {
+    top: 51px;
+  }
+
+  /* line 23, ../sass/partials/_mobile.scss */
+  .logo {
+    display: none;
+  }
+
+  /* line 26, ../sass/partials/_mobile.scss */
+  .main-menu-wrap {
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+  }
+  /* line 31, ../sass/partials/_mobile.scss */
+  .main-menu-wrap .active {
+    display: block;
+  }
+
+  /* line 35, ../sass/partials/_mobile.scss */
+  .menu-dropdown {
+    cursor: pointer;
+    display: block;
+    font-family: "Racing Sans One", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 0;
+  }
+  /* line 43, ../sass/partials/_mobile.scss */
+  .menu-dropdown .fa-caret-up {
+    display: none;
+  }
+
+  /* line 48, ../sass/partials/_mobile.scss */
+  .open .fa-caret-down {
+    display: none;
+  }
+  /* line 51, ../sass/partials/_mobile.scss */
+  .open .fa-caret-up {
+    display: inline;
+  }
+
+  /* line 55, ../sass/partials/_mobile.scss */
+  .main-menu {
+    border-top: 1px solid #999;
+    display: none;
+    height: auto;
+    padding: 10px 0;
+  }
+  /* line 61, ../sass/partials/_mobile.scss */
+  .main-menu li {
+    background: none;
+    width: 100%;
+  }
+  /* line 65, ../sass/partials/_mobile.scss */
+  .main-menu li a {
+    background: none;
+    border: none;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+  }
+  /* line 73, ../sass/partials/_mobile.scss */
+  .main-menu li a:hover {
+    background: #eea44f;
+  }
+
+  /* line 78, ../sass/partials/_mobile.scss */
+  .jd-picture-wrap {
+    margin: 0 0 0 10px;
+  }
+
+  /* line 81, ../sass/partials/_mobile.scss */
+  .jd-picture {
+    height: 125px;
+    width: 125px;
+  }
+
+  /* line 86, ../sass/partials/_mobile.scss */
+  .coming-soon {
+    padding: 100px 0;
+  }
+  /* line 89, ../sass/partials/_mobile.scss */
+  .coming-soon h2 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+  /* line 93, ../sass/partials/_mobile.scss */
+  .coming-soon h3 {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  /* line 99, ../sass/partials/_mobile.scss */
+  .contact-info {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  /* line 103, ../sass/partials/_mobile.scss */
+  .contact-social {
+    width: 100%;
+  }
+
+  /* line 107, ../sass/partials/_mobile.scss */
+  .footer-wrap {
+    height: 25px;
+  }
+
+  /* line 110, ../sass/partials/_mobile.scss */
+  .footer-name {
+    font-size: 40px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 420px) {
+  /* line 120, ../sass/partials/_mobile.scss */
+  .services-icons {
+    width: 200px;
+  }
+  /* line 123, ../sass/partials/_mobile.scss */
+  .services-icons li {
+    margin: 0 10px 10px 0;
+  }
+}
